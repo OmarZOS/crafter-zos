@@ -4,28 +4,30 @@ services:
     build: dummy_client/
     image: dummy_rmq_publisher
     container_name: phoros-dummy_rmq_publisher
-    depends_on:
-      - dummy_rmq_listener
+    # depends_on:
+    #   - dummy_rmq_listener
     environment:
       - RABBIT_MQ_HOST=rabbitmq-broker
       - RABBIT_MQ_PORT=5672
       - RABBIT_MQ_USER=omar
       - RABBIT_MQ_PASSWORD=omar
-      - RABBIT_MQ_EXCHANGE=storage
+      - RABBIT_MQ_EXCHANGE=data
     networks:
       - phoros_net
-  dummy_rmq_listener:
-    build: dummy_listener/
-    image: dummy_rmq_listener
-    container_name: phoros-dummy_rmq_listener
-    environment:
-      - RABBIT_MQ_HOST=rabbitmq-broker
-      - RABBIT_MQ_PORT=5672
-      - RABBIT_MQ_USER=omar
-      - RABBIT_MQ_PASSWORD=omar
-      - RABBIT_MQ_EXCHANGE=storage
-    networks:
-      - phoros_net
+    volumes:
+      - ./dummy_client:/code
+  # dummy_rmq_listener:
+  #   build: dummy_listener/
+  #   image: dummy_rmq_listener
+  #   container_name: phoros-dummy_rmq_listener
+  #   environment:
+  #     - RABBIT_MQ_HOST=rabbitmq-broker
+  #     - RABBIT_MQ_PORT=5672
+  #     - RABBIT_MQ_USER=omar
+  #     - RABBIT_MQ_PASSWORD=omar
+  #     - RABBIT_MQ_EXCHANGE=data
+  #   networks:
+  #     - phoros_net
 networks:
   phoros_net:
     external: true

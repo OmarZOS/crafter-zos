@@ -27,7 +27,7 @@ channel.queue_declare(queue='Twitter')
 channel.exchange_declare(EXCHANGE,exchange_type=ExchangeType.direct)
 # channel.queue_bind(exchange=EXCHANGE, queue='Twitter')
 
-with open('dummy_client/Graph.json') as f:
+with open('graphe') as f:
     dateien = json.load(f)
 
 
@@ -36,7 +36,7 @@ with open('dummy_client/Graph.json') as f:
 # print(dateien["nodes"])
 
 # channel.basic_publish(exchange="storage", routing_key="Twitter", body=json.dumps({"h":[]}))
-channel.basic_publish(exchange=EXCHANGE, routing_key='Twitter', body=json.dumps(dateien))
+channel.basic_publish(exchange=EXCHANGE, routing_key='Youtube', body=json.dumps(dateien))
 # channel.basic_publish(exchange=EXCHANGE, routing_key='Twitter', body=json.dumps({"h":[1,2],"roadmap":[]}))
 # channel.basic_publish(exchange=EXCHANGE, routing_key='Twitter', body=json.dumps({"h":[1,2],"roadmap":[]}))
 # channel.basic_publish(exchange=EXCHANGE, routing_key='Twitter', body=json.dumps({"h":[1,2],"roadmap":[]}))

@@ -14,7 +14,7 @@ RMQ_USER = str(os.getenv("RABBIT_MQ_USER"))
 print(RMQ_USER)
 RMQ_PASSWORD = str(os.getenv("RABBIT_MQ_PASSWORD"))
 print(RMQ_PASSWORD)
-EXCHANGE = str(os.getenv("RABBIT_MQ_EXCHANGE"))
+EXCHANGE = "transform"# str(os.getenv("RABBIT_MQ_EXCHANGE"))
 print(EXCHANGE)
 
 
