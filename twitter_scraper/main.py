@@ -3,7 +3,7 @@ from random import randint
 
 from constants import *
 from date import get_since_until
-from twitter_scrapper import  process_data, save_json, search_twitter
+from scraper import  process_data, save_json, search_twitter
 
 list_of_trends = ['mila dz']
 #   '#DamlaSönmez', 'الفردوس الاعلي','Alger', 'المغرب', '#كلنا_جنين', '#SPYxFamily', '#Bitcoin', '#الحريه_لاحمد_مناصره','#souhilabenlachhab', '#الو_ساهو_btv', '#Maroc', 
