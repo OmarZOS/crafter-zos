@@ -5,7 +5,7 @@ from constants import *
 from date import get_since_until
 from twitter_scrapper import  process_data, save_json, search_twitter
 
-list_of_trends = ['الو_ساهو_btv']
+list_of_trends = ['Constantine']
 #   '#DamlaSönmez', 'الفردوس الاعلي','Alger', 'المغرب', '#كلنا_جنين', '#SPYxFamily', '#Bitcoin', '#الحريه_لاحمد_مناصره','#souhilabenlachhab', '#الو_ساهو_btv', '#Maroc', 
 # class TwitterExtractor:
 
