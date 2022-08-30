@@ -1,0 +1,30 @@
+[http.middlewares.simpleAuth.basicAuth]
+  users = [
+    "admin:$apr1$EihhUcWZ$UduAe3jREsnGJSYoOzuVI/"
+  ]
+
+[http.routers.api]
+  rule = "Host(`monitor.ravensclaw.dz`)"
+  entrypoints = ["websecure"]
+  middlewares = ["simpleAuth"]
+  service = "api@internal"
+  [http.routers.api.tls]
+    certResolver = "lets-encrypt"
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -11,6 +11,7 @@
  - **[Video splitter](video_splitter/):** Youtube video splitter into chunks.
  - **[Kubernetes cluster deployment](kubernetes-cluster-ubuntu-server-20.04.4-config/):**  Configure and deploy kubernetes cluster over ubuntu-server-20.04.4.
  - **[Docker swarm deployment](docker-swarm/):**  Configure and deploy docker swarm cluster over ubuntu-server-20.04.4 nodes.
+ - **[Traefik tls configuration](reverse-proxy-traefik/):**  Configure and deploy traefik for dev and prod environments.
 
 
 
