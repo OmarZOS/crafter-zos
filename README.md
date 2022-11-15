@@ -13,7 +13,7 @@
  - **[Docker swarm deployment](docker-swarm/):**  Configure and deploy docker swarm cluster over ubuntu-server-20.04.4 nodes.
  - **[Traefik tls configuration](reverse-proxy-traefik/):**  Configure and deploy traefik for dev and prod environments.
 - **[Drag&drop-web-editor](drag&drop-web-editor/):** GrapesJS based drag & drop web editor.
-
+- **[Diplome-generator](diplome-generator/):** Python script to generate multiple .pptx files from a .pptx template and .xlsx file.
 
 
 

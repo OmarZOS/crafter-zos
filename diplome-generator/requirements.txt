@@ -1,0 +1,4 @@
+ezodf
+pandas
+python-pptx
+pyinstaller
