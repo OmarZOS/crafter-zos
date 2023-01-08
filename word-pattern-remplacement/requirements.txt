@@ -1,0 +1,6 @@
+python-docx
+pandas
+python-dotenv
+pyinstaller
+openpyxl
+libssl

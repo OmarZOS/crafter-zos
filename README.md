@@ -14,6 +14,7 @@
  - **[Traefik tls configuration](reverse-proxy-traefik/):**  Configure and deploy traefik for dev and prod environments.
 - **[Drag&drop-web-editor](drag&drop-web-editor/):** GrapesJS based drag & drop web editor.
 - **[Diplome-generator](diplome-generator/):** Python script to generate multiple .pptx files from a .pptx template and .xlsx file.
+- **[Word files generator](word-pattern-remplacement/):** Python script to generate multiple .docx files from a .docx template and .xlsx file.
 
 
 
