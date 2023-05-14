@@ -1,0 +1,7 @@
+setup.py
+word_pattern_switcher.egg-info/PKG-INFO
+word_pattern_switcher.egg-info/SOURCES.txt
+word_pattern_switcher.egg-info/dependency_links.txt
+word_pattern_switcher.egg-info/not-zip-safe
+word_pattern_switcher.egg-info/requires.txt
+word_pattern_switcher.egg-info/top_level.txt
