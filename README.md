@@ -17,6 +17,7 @@
 - **[Word files generator](word-pattern-replacement/):** Python script to generate multiple .docx files from a .docx template and .xlsx file.
 - **[ScyllaDB playground](word-pattern-replacement/):** A bunch of testing queries.
 - **[MySQL playground](word-pattern-replacement/):** Also a bunch of testing queries.
+- **[Book formatter](book-formatter/):** Python code to format a book for printing.
 
 
 
